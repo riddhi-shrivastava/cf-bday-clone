@@ -1,0 +1,1264 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #fff;
+  margin: 3px 8px;
+
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+.wrapper {
+  max-width: 1200px;
+  min-width: 920px;
+
+  margin: 0 auto;
+  padding-top: 0.75em;
+}
+
+.header {
+  position: relative;
+
+  min-height: 5em;
+  margin: 0 1em;
+}
+
+.header img {
+  height: 65px;
+  width: auto;
+}
+
+:root {
+  --border-radius: 6px;
+  --border-color: rgb(185, 185, 185);
+}
+
+/* =========================
+   OUTER BOX BORDER
+   (single consistent frame)
+========================= */
+.box {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+
+  margin: 0 1em;
+  padding: 0 0.5em;
+
+  min-height: 3em;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  list-style: none;
+  margin-right: 1.2em;
+}
+
+.nav-list li a {
+  font-family: "Cuprum", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+.search-box {
+  margin-left: auto;
+}
+
+.search-box input {
+  width: 9em;
+  height: 16px;
+
+  padding: 1px 1px 1px 20px;
+
+  border: 1px solid #d4d4d4;
+  background: #f4f4f4 url("images/search-16x16.png") 2px 2px no-repeat;
+
+  color: #666;
+  font:
+    1rem Verdana,
+    Arial,
+    sans-serif;
+  line-height: 16px;
+
+  outline: none;
+}
+
+/* =========================
+   LAYOUT (FIXED: FLEX ONLY)
+========================= */
+
+.content-sidebar {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2em;
+  margin: 1em 0;
+  padding-top: 1em;
+}
+
+.left-content {
+  flex: 1;
+  margin: 0 0 0 1em;
+  min-width: 0;
+}
+
+.sidebar {
+  flex: 0 0 20em;
+  margin-top: 1.2em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1300px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .sidebar {
+    width: 230px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .sidebar {
+    width: 220px;
+  }
+}
+
+@media (max-width: 900px) {
+  .content-sidebar {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+.title {
+  margin-bottom: 0.3em;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #3b5998;
+}
+
+.title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.info {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+}
+
+.info p {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+
+  margin: 0;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+
+  margin: 1em 0;
+  padding-left: 1em;
+
+  border-left: 4px solid rgb(185, 185, 185);
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 21px;
+  color: #222;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.post-content h1 {
+  margin: 0.4286em 0 0;
+  font-size: 250%;
+  font-weight: 400;
+  line-height: 0.8571em;
+}
+
+.post-content p {
+  margin: 1.5em 0 0 0;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.post-content ul {
+  margin: 1.5em 0 0 1.5em;
+  padding: 0;
+}
+
+.post-content li {
+  margin: 0.4em 0;
+}
+
+.post-content a {
+  color: #3b5998;
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+.meta-content {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+  padding: 0 1em;
+}
+
+.left-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.right-meta {
+  margin-left: auto;
+}
+
+.right-meta p {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.topic-rating {
+  font-weight: bold;
+  color: green;
+  font-size: 1.1em;
+  line-height: 1;
+}
+/* =========================
+   HEADINGS
+========================= */
+
+.sidebar .box,
+.sidebar .sidebar-box,
+.sidebar .find-user-widget {
+  background: #fff;
+  margin-bottom: 1.5em;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8em 1em;
+  gap: 0.3em;
+}
+
+.notice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.1em;
+  width: 100%;
+}
+
+.muted {
+  font-size: 1.4rem;
+  color: #777;
+  text-align: center;
+}
+
+.before-contest {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b5998;
+  text-align: center;
+}
+
+.caption .titled {
+  padding: 0 0 0.3em 0.5em;
+}
+.caption {
+  display: flex;
+  align-items: center;
+  margin: 0.2em 0;
+  border-bottom: 1px solid rgb(185, 185, 185);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b5998;
+}
+
+.sidebar a {
+  color: #3b5998;
+  text-decoration: none;
+}
+
+.notice a {
+  color: #0000cc;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+/* =========================
+   PROFILE
+========================= */
+
+.box-content-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 0.8em 1em;
+}
+
+.profile-body {
+  padding: 8px;
+}
+
+.profile-body .pupil {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.rating,
+.contribution {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4em;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex: 0 0 auto;
+
+  text-align: center;
+  font-size: smaller;
+
+  padding: 0.5em;
+}
+
+.profile-avatar {
+  display: block;
+
+  width: 5em;
+  height: 5em;
+
+  object-fit: cover;
+
+  border: 0;
+
+  margin-bottom: 0.5em;
+}
+
+.profile-stats {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.1em;
+}
+
+.rating,
+.contribution {
+  display: flex;
+  align-items: center;
+
+  font-size: 0.8em;
+}
+
+.label {
+  font-weight: normal;
+}
+
+.value {
+  margin-left: 0.3em;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0.5em 0 0;
+  padding: 0;
+}
+
+.profile-links li {
+  align-items: center;
+
+  font-size: 0.8em;
+
+  list-style: disc;
+  list-style-position: inside;
+
+  margin: 0.15em 0;
+}
+
+.profile-links li a {
+  color: #0000cc;
+  text-decoration: underline;
+}
+/* =========================
+   TABLES
+========================= */
+
+.top-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  font-family: Verdana, Arial, sans-serif;
+}
+
+.top-table th {
+  padding: 7px 4px 4px;
+
+  border: 1px solid rgb(185, 185, 185);
+  border-top: none;
+  border-right: none;
+
+  text-align: center;
+  vertical-align: middle;
+
+  font-size: 1em;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.top-table td {
+  padding: 4px;
+
+  border: 1px solid rgb(185, 185, 185);
+  border-top: none;
+  border-right: none;
+
+  text-align: center;
+  vertical-align: middle;
+
+  font-size: 0.9em;
+}
+
+.dark {
+  background-color: #f5f5f5;
+}
+.top-table tr:first-child th {
+  border-top: none;
+}
+
+.top-table th:first-child,
+.top-table td:first-child {
+  border-left: none;
+}
+
+/* =========================
+   RATING COLORS
+========================= */
+
+.gm {
+  color: #ff0000;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.lgm-first {
+  color: #000000;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.lgm-rest {
+  color: #ff0000;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cmaster {
+  color: #aa00aa;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.master {
+  color: #ff8c00;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.expert {
+  color: #0000ff;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.specialist {
+  color: #03a89e;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.newbie {
+  color: #808080;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.pupil {
+  color: #008000;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* =========================
+   SCORE
+========================= */
+
+.score {
+  font-family: "Times New Roman", serif;
+  font-size: 150%;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.post-content .score {
+  font-family: "Times New Roman", serif;
+  font-size: 150%;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.5em;
+}
+/* =========================
+   BOX TITLE
+========================= */
+
+.box-title {
+  text-align: center;
+  border-bottom: 1px solid rgb(185, 185, 185);
+  margin: 0 -0.5em 0.5em -0.5em;
+  padding: 0 1em 0.5em 1em;
+
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* =========================
+   TOP LINKS
+========================= */
+
+.top-links {
+  padding: 6px 8px;
+  font-size: 11px;
+  color: #888;
+  background-color: #f5f5f5;
+}
+
+.top-links a {
+  color: #0000cc;
+}
+
+/* =========================
+   FIND USER WIDGET
+========================= */
+
+.find-user-widget .card-body {
+  padding: 8px;
+}
+
+.input-row {
+  margin-bottom: 6px;
+}
+
+.input-row input {
+  width: 100%;
+  box-sizing: border-box;
+
+  font-size: 12px;
+  padding: 2px 4px;
+
+  border: 1px solid #ccc;
+}
+
+.button-row button {
+  font-size: 12px;
+  padding: 2px 8px;
+
+  border: 1px solid #999;
+  background: #eee;
+
+  cursor: pointer;
+}
+
+.box-content-handle {
+  padding: 0.8em;
+  font-size: 1.2rem;
+}
+
+.find-user-widget form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 0.3em 0.5em;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-row button {
+  padding: 0.3em 0.8em;
+  border: 1px solid #888;
+  background: #eee;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.button-row button:hover {
+  background: #ddd;
+}
+
+.secondary-tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.secondary-tabs-list li {
+  display: flex;
+}
+
+.secondary-tabs-list li a {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 10px;
+  height: 28px;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Cuprum", sans-serif;
+  text-transform: uppercase;
+
+  color: #000;
+  text-decoration: none;
+
+  position: relative;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.secondary-tabs-list li a:hover {
+  background: #e1e1e1;
+}
+
+/* ===========================
+   Problems Table
+=========================== */
+
+.problems-table-container {
+  width: 100%;
+  position: relative;
+}
+
+.problems-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.datatable td,
+.datatable th {
+  border-top: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  padding: 0.4em;
+  font-size: 1.3rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.datatable th {
+  font-weight: bold;
+}
+
+.problem-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-wrapper img {
+  width: 16px;
+  height: 16px;
+}
+
+.problem-limits {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  font-size: 1.1rem;
+  padding-top: 1px;
+  text-align: right;
+  line-height: 1.2;
+  color: #666;
+}
+
+.table-footer-links {
+  font-size: 1.1rem;
+  text-align: end;
+  margin-top: 0.3rem;
+}
+
+.ask-question-wrapper {
+  padding: 0.8rem 0;
+  text-align: end;
+  margin-top: 1.5rem;
+}
+
+.box-content-widget {
+  text-align: center;
+}
+
+.caption .black {
+  text-decoration: underline;
+  color: #000;
+  justify-content: center;
+}
+
+.widget-action-row {
+  margin-bottom: 1rem;
+}
+
+.box-content-widget {
+  padding: 0.5rem 0.8rem;
+}
+
+.contest-running {
+  font-weight: bold;
+  color: #3b5998;
+  font-size: 1.5rem;
+}
+
+.sample-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.sample-table td {
+  width: 50%;
+  vertical-align: top;
+  padding: 0 8px;
+}
+
+.sample-table pre {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-family: Consolas, monospace;
+  white-space: pre-wrap;
+}
+
+.problem-page {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.section-title {
+  margin: 1em 0 0.5em;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+
+  border: none;
+  padding: 0;
+}
+
+.main-content {
+  width: calc(100% - 340px);
+}
+
+.problem-properties {
+  margin: 12px 0 28px;
+}
+
+.problem-properties div {
+  margin: 2px 0;
+}
+
+.problem-title {
+  padding: 0.5rem 0.3rem;
+  background-color: #e1e1e1;
+  border-top: none;
+}
+
+.no-items-row {
+  margin: 0.5rem 0.3rem;
+  background-color: #f5f5f5;
+}
+
+.problem-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1em;
+  gap: 0.3em;
+}
+
+.sample-box {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 0.5em;
+}
+
+.sample-box th {
+  padding: 0.3em 0.6em;
+  text-align: left;
+  font-weight: bold;
+  border: none;
+}
+
+.sample-box td {
+  width: 50%;
+  padding: 0.3em 0.6em;
+  vertical-align: top;
+  border: none;
+}
+
+.sample-box pre {
+  margin: 0;
+  padding: 0.5em;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.wrong-answer {
+  font-size: 150%;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.ttypography {
+  margin: 1.5em 0 0;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  color: #222;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  -webkit-text-size-adjust: 100%;
+}
+
+.ttypography p {
+  margin: 0 0 1em;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.ttypography p:first-child {
+  margin-top: 0;
+}
+
+.ttypography ul,
+.ttypography ol {
+  margin: 0 0 1em 2em;
+  padding: 0;
+}
+
+.ttypography li {
+  margin: 0.3em 0;
+}
+
+.ttypography table {
+  border-collapse: collapse;
+}
+
+.ttypography img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.ttypography pre {
+  margin: 0;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 1em;
+  line-height: 1.3em;
+  white-space: pre-wrap;
+}
+
+/* Container adjustments */
+.sample-tests {
+  margin-top: 20px;
+  font-family: "Cuprum", sans-serif;
+}
+
+.sample-tests .section-title {
+  font-weight: bold;
+  font-size: 1.15em;
+  margin-bottom: 0.5em;
+}
+
+/* Master table block */
+.sample-box {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #888;
+  box-sizing: border-box;
+}
+
+/* Section block headers (input / output) */
+.sample-box th.toggle-header {
+  font-size: 1.1em;
+  padding: 0.25em;
+  border: 1px solid #888;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-family:
+    Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono",
+    "Courier New", Courier, monospace;
+}
+
+/* Separate the input table block from the output header */
+tr + tr th.toggle-header {
+  border-top: 1px solid #b9b9b9;
+}
+
+/* Individual Data Row Zebra Lines */
+.sample-box tbody tr:nth-child(odd) {
+  background-color: #e0e0e0;
+}
+
+.sample-box tbody tr:nth-child(even) {
+  background-color: #efefef;
+}
+
+/* Table cells holding data text strings */
+.sample-box td {
+  padding: 0.25em;
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-size: 0.9em;
+  color: #800;
+  white-space: pre; /* Keeps code spacing unchanged */
+  line-height: 1.25rem;
+}
+
+/* Container framework for the widget card */
+.contest-widget {
+  width: 100%;
+  max-width: 320px; /* Adjust to match your sidebar width */
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+  border-radius: 6px;
+  box-sizing: border-box;
+  overflow: hidden; /* Ensures background colors stay inside rounded corners */
+  font-family: Arial, sans-serif;
+  margin-bottom: 15px;
+}
+
+/* Master row adjustments */
+.widget-row {
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* Remove the bottom border from the very last row */
+.widget-row:last-child {
+  border-bottom: none;
+}
+
+/* Header Row Specific Styles */
+.widget-row.header-row {
+  text-align: center;
+  border-bottom: 1px solid #b9b9b9; /* Thicker distinct separating line */
+  padding: 4px;
+}
+
+.sidebar .contest-title-link {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: verdana, arial, sans-serif;
+}
+
+.running-display,
+.timer-display {
+  border-bottom: 1px solid rgb(185, 185, 185);
+  padding: 4px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.running-display {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #3b5998;
+  font-family: verdana, arial, sans-serif;
+}
+
+.timer-display {
+  font-size: 1em;
+  background-color: #f5f5f5;
+  color: #666;
+  border: none;
+}
+
+.widget-desc {
+  font-size: 1.1rem;
+}
+
+.submit-widget {
+  padding: 0.5em;
+}
+
+.submit-widget form,
+button,
+label,
+select,
+input {
+  font-size: 1.1rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+/* Align labels and inputs side-by-side */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+/* Align label text to the top for the textarea row */
+.form-row:has(textarea) {
+  align-items: flex-start;
+}
+
+/* Left Label Column alignment */
+.form-row label {
+  width: 7.5em;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #000000;
+  text-align: right;
+  padding: 0.5em 2em 0.5em 0.5em;
+  font-family: verdana, arial, sans-serif;
+}
+
+/* Interactive elements matching image_c93c64.png widths */
+.form-row select {
+  width: 360px;
+  padding: 3px 4px;
+  font-size: 14px;
+  border: 1px solid #7a7a7a;
+  border-radius: 2px;
+}
+
+.form-row textarea {
+  flex: 1;
+  max-width: 720px;
+  height: 380px;
+  padding: 6px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  border: 1px solid #b9b9b9;
+  resize: vertical;
+}
+
+/* Align button row with the interactive items */
+.form-submit-row {
+  padding-left: 160px;
+}
+
+.submit-btn {
+  font-size: 14px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.submit-solution {
+  text-align: center;
+  padding: 1.5em 0 0.5em;
+  font-size: 1.25em;
+  margin: 0 auto;
+}
+
+.cf-round-1 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+/* -------------------------------------------------------------
+   CODEFORCES STATUS LOG TABLE STYLING
+------------------------------------------------------------- */
+
+/* Container wrapping the table */
+.status-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Base table configuration */
+.status-log-table {
+  width: 100%;
+
+  border-collapse: collapse;
+  padding: 0.4em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1rem; /* CF uses compact font sizing */
+}
+
+/* Table Headers */
+.status-log-table th {
+  color: #000; /* Dark gray header text */
+  font-weight: bold;
+  text-align: center;
+  padding: 0.6em;
+  border: 1px solid #b9b9b9;
+  font-size: 1.3rem;
+}
+
+/* Data Cells */
+.status-log-table td {
+  padding: 0.6em;
+  border: 1px solid #e1e1e1;
+  color: #000;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #def;
+}
+
+.status-log-table td,
+.status-log-table th {
+  border-top: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+
+  /* Change padding to absolute sizing for structured row heights */
+  padding: 6px 8px;
+
+  /* Use standard pixels or standard ems matching a normal body font scale */
+  font-size: 13px;
+
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/* Links inside the table (Problem links, user links etc) */
+.status-log-table td a {
+  color: #00c;
+  text-decoration: none;
+}
+
+.status-log-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Zebra Striping Classes handled by your JS logic */
+.status-log-table tr.row-even td {
+  background-color: #fff;
+}
+
+.status-log-table tr.row-odd td {
+  background-color: #f8f8f8; /* Very light gray alternating rows */
+}
+
+/* Hover effect on entire row */
+.status-log-table tr:hover td {
+  background-color: #f0f4f7 !important; /* Highlights row on hover */
+}
+
+/* -------------------------------------------------------------
+   VERDICT COLORS (ACCURATE CF PALETTE)
+------------------------------------------------------------- */
+
+/* Green Accepted style */
+.status-log-table .verdict-accepted {
+  color: #00a000;
+  font-weight: bold;
+}
+
+/* If you use "Running on tests..." dynamic text style */
+.status-log-table span[style*="color:orange;"] {
+  font-weight: bold;
+  color: #0000a0 !important; /* CF actually uses deep blue for running text */
+}

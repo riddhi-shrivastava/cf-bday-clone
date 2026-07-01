@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeforces - Contest Problems Dashboard</title>
+    <link rel="icon" href="codeforcesicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Reused Master Header Section -->
+      <header class="header">
+        <div class="logo-section">
+          <a href="index.html">
+            <img src="codeforces-sponsored-by-ton.png" alt="Codeforces" />
+          </a>
+        </div>
+      </header>
+
+      <!-- Reused Primary Navigation Bar Container -->
+      <div class="box">
+        <div class="navbar">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <li class="nav-item"><a href="#">TOP</a></li>
+            <li class="nav-item"><a href="#">CATALOG</a></li>
+            <li class="nav-item"><a href="contest.html">CONTESTS</a></li>
+            <li class="nav-item"><a href="#">GYM</a></li>
+            <li class="nav-item"><a href="#">PROBLEMSET</a></li>
+            <li class="nav-item"><a href="#">GROUPS</a></li>
+            <li class="nav-item"><a href="#">RATING</a></li>
+            <li class="nav-item"><a href="#">EDU</a></li>
+            <li class="nav-item"><a href="#">API</a></li>
+            <li class="nav-item"><a href="#">CALENDAR</a></li>
+            <li class="nav-item"><a href="#">HELP</a></li>
+          </ul>
+
+          <div class="search-box">
+            <input type="text" placeholder="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Layout Grid Split -->
+      <div class="content-sidebar">
+        <!-- Left Content Column: Problems Listing Matrix -->
+        <div class="left-content">
+          <!-- Secondary Sub-Navigation Inner Tabs Menu -->
+          <div class="secondary-tabs">
+            <ul class="secondary-tabs-list">
+              <li><a href="contest.html" class="active-tab">PROBLEMS</a></li>
+              <li><a href="submissions.html">SUBMIT CODE</a></li>
+              <li><a href="result.html">MY SUBMISSIONS</a></li>
+              <li><a href="result.html">STATUS</a></li>
+              <li><a href="#">STANDINGS</a></li>
+              <li><a href="#">CUSTOM INVOCATION</a></li>
+            </ul>
+          </div>
+
+          <!-- Main Problems Table Component Wrapper -->
+          <div class="box">
+            <div class="datatable">
+              <div class="problem-title">Problems</div>
+              <table class="problems-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Problem A Row -->
+                  <tr class="dark">
+                    <td class="problem-id-cell">
+                      <a href="problem.html?id=A">A</a>
+                    </td>
+                    <td class="problem-name-cell">
+                      <div class="problem-name-wrapper">
+                        <a href="problem.html?id=A">Wrong Answer</a>
+                        <div class="problem-limits">
+                          <span class="limit-type">standard input/output</span>
+                          <span class="limit-specs">2.5 s, 256 MB</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="problem-icons">
+                      <div class="icon-wrapper">
+                        <img src="submit.png" alt="submit" />
+                        <img src="favorite.png" alt="favorite" />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- Problem B Row -->
+                  <tr class>
+                    <td class="problem-id-cell">
+                      <a href="problem.html?id=B">B</a>
+                    </td>
+                    <td class="problem-name-cell">
+                      <div class="problem-name-wrapper">
+                        <a href="problem.html?id=B">AI or no AI?</a>
+                        <div class="problem-limits">
+                          <span class="limit-type">standard input/output</span>
+                          <span class="limit-specs">2.5 s, 256 MB</span>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="problem-icons">
+                      <div class="icon-wrapper">
+                        <img src="submit.png" alt="submit" />
+                        <img src="favorite.png" alt="favorite" />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- Problem C Row -->
+                  <tr class="dark">
+                    <td class="problem-id-cell">
+                      <a href="problem.html?id=C">C</a>
+                    </td>
+                    <td class="problem-name-cell">
+                      <div class="problem-name-wrapper">
+                        <a href="problem.html?id=C">Decidophobia</a>
+                        <div class="problem-limits">
+                          <span class="limit-type">standard input/output</span>
+                          <span class="limit-specs">2.5 s, 256 MB</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="problem-icons">
+                      <div class="icon-wrapper">
+                        <img src="submit.png" alt="submit" />
+                        <img src="favorite.png" alt="favorite" />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- Problem D Row -->
+                  <tr>
+                    <td class="problem-id-cell">
+                      <a href="problem.html?id=D">D</a>
+                    </td>
+                    <td class="problem-name-cell">
+                      <div class="problem-name-wrapper">
+                        <a href="problem.html?id=D">Slightly less optimal</a>
+                        <div class="problem-limits">
+                          <span class="limit-type">standard input/output</span>
+                          <span class="limit-specs">2.5 s, 256 MB</span>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="problem-icons">
+                      <div class="icon-wrapper">
+                        <img src="submit.png" alt="submit" />
+                        <img src="favorite.png" alt="favorite" />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- Problem E Row -->
+                  <tr class="dark">
+                    <td class="problem-id-cell">
+                      <a href="problem.html?id=E">E</a>
+                    </td>
+                    <td class="problem-name-cell">
+                      <div class="problem-name-wrapper">
+                        <a href="problem.html?id=E">Time Complexity</a>
+                        <div class="problem-limits">
+                          <span class="limit-type">standard input/output</span>
+                          <span class="limit-specs">2.5 s, 256 MB</span>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="problem-icons">
+                      <div class="icon-wrapper">
+                        <img src="submit.png" alt="submit" />
+                        <img src="favorite.png" alt="favorite" />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- Problem F Row -->
+                  <tr>
+                    <td class="problem-id-cell">
+                      <a href="problem.html?id=F">F</a>
+                    </td>
+                    <td class="problem-name-cell">
+                      <div class="problem-name-wrapper">
+                        <a href="problem.html?id=F">Invariance</a>
+                        <div class="problem-limits">
+                          <span class="limit-type">standard input/output</span>
+                          <span class="limit-specs">2.5 s, 256 MB</span>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="problem-icons">
+                      <div class="icon-wrapper">
+                        <img src="submit.png" alt="submit" />
+                        <img src="favorite.png" alt="favorite" />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Bottom Table Navigation Context Links -->
+          <div class="table-footer-links">
+            <a href="#" class="link-complete-set">Complete problemset</a>
+          </div>
+
+          <!-- Ask Question Interaction Trigger -->
+          <div class="ask-question-wrapper">
+            <a href="#" class="link-ask-question">Ask a question</a>
+          </div>
+
+          <!-- Secondary Bottom Panel: Questions Block Container -->
+          <div class="box">
+            <div class="datatable">
+              <div class="problem-title">Questions about problems</div>
+              <div class="box-content-table">
+                <table class="problems-table">
+                  <thead>
+                    <tr>
+                      <th class="col-question-heading">Question</th>
+                      <th class="col-answer-heading">Answer</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+
+                <div class="no-items-row">
+                  <div class="dark">No items</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Right Column Layout Panel -->
+        <div class="sidebar">
+          <div class="contest-widget">
+            <!-- Widget Header (Contest Title) -->
+            <div class="widget-row header-row">
+              <a href="#" class="contest-title-link"
+                >Codeforces Round 1105 (Div. 1)</a
+              >
+            </div>
+
+            <!-- Finished Status Row -->
+            <div class="running-display">Contest is running</div>
+            <!-- Footer Row (Star Indicator) -->
+            <div class="timer-display" id="countdown-clock">02:05:00</div>
+          </div>
+
+          <!-- Widget 2: Mashup Generation Clone Utilities -->
+          <div class="box">
+            <div class="caption">
+              <div class="titled">→ Clone Contest to Mashup</div>
+            </div>
+            <div class="box-content-widget">
+              <p class="widget-instruction-text">
+                You can clone this contest to a mashup.
+              </p>
+              <div class="widget-action-row">
+                <button type="button" class="btn-clone-action">
+                  Clone Contest
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Set the total duration of the contest in seconds when they open the page
+      // 2 hours, 5 minutes = (2 * 3600) + (5 * 60) = 7500 seconds
+      let totalSeconds = 7500;
+
+      const clockElement = document.getElementById("countdown-clock");
+
+      const countdownInterval = setInterval(() => {
+        if (totalSeconds <= 0) {
+          clearInterval(countdownInterval);
+          clockElement.textContent = "00:00:00";
+          document.querySelector(".contest-running").textContent =
+            "Contest Finished";
+          return;
+        }
+
+        // Decrement the timer
+        totalSeconds--;
+
+        // Math calculation for Hours, Minutes, and Seconds
+        let hours = Math.floor(totalSeconds / 3600);
+        let minutes = Math.floor((totalSeconds % 3600) / 60);
+        let seconds = totalSeconds % 60;
+
+        // Pad single digits with a leading zero (e.g., 5 becomes "05")
+        hours = String(hours).padStart(2, "0");
+        minutes = String(minutes).padStart(2, "0");
+        seconds = String(seconds).padStart(2, "0");
+
+        // Display the live update on the screen
+        clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+      }, 1000); // Code runs every 1000ms (1 second)
+    </script>
+  </body>
+</html>

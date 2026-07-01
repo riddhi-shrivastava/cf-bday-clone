@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeforces - Problem View</title>
+    <link rel="icon" href="codeforcesicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Reused Header Element -->
+      <header class="header">
+        <div class="logo-section">
+          <a href="index.html">
+            <img src="codeforces-sponsored-by-ton.png" alt="Codeforces" />
+          </a>
+        </div>
+      </header>
+
+      <!-- Reused Navigation Bar Container -->
+      <div class="box">
+        <div class="navbar">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <li class="nav-item"><a href="#">TOP</a></li>
+            <li class="nav-item"><a href="#">CATALOG</a></li>
+            <li class="nav-item"><a href="contest.html">CONTESTS</a></li>
+            <li class="nav-item"><a href="#">GYM</a></li>
+            <li class="nav-item"><a href="#">PROBLEMSET</a></li>
+            <li class="nav-item"><a href="#">GROUPS</a></li>
+            <li class="nav-item"><a href="#">RATING</a></li>
+            <li class="nav-item"><a href="#">EDU</a></li>
+            <li class="nav-item"><a href="#">API</a></li>
+            <li class="nav-item"><a href="#">CALENDAR</a></li>
+            <li class="nav-item"><a href="#">HELP</a></li>
+          </ul>
+
+          <div class="search-box">
+            <input type="text" placeholder="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content Split View -->
+      <div class="content-sidebar">
+        <!-- Left Column Context -->
+        <div class="left-content">
+          <!-- Secondary Sub-Navigation Tab Element Matrix -->
+          <div class="secondary-tabs">
+            <ul class="secondary-tabs-list">
+              <li><a href="contest.html" class="active-tab">PROBLEMS</a></li>
+              <li><a href="submissions.html">SUBMITE</a></li>
+              <li><a href="result.html">STATUS</a></li>
+              <li><a href="#">STANDINGS</a></li>
+              <li><a href="#">CUSTOM TEST</a></li>
+            </ul>
+          </div>
+
+          <!-- Central Problem Statement Panel Wrapper -->
+          <div class="box-new">
+            <div class="problem-statement">
+              <!-- System Technical Headers -->
+              <div class="ttypography">
+                <div class="problem-header">
+                  <div class="wrong-answer" id="prob-title">
+                    A. Loading Problem...
+                  </div>
+
+                  <div class="problem-prop">
+                    <span class="property-title">time limit per test:</span>
+                    <span id="prob-time-limit">2.0 seconds</span>
+                  </div>
+                  <div class="problem-prop">
+                    <span class="property-title">memory limit per test:</span>
+                    <span id="prob-memory-limit">256 megabytes</span>
+                  </div>
+                </div>
+
+                <!-- Core Narrative Output Segment -->
+                <div id="prob-statement">
+                  <p>Loading the contest challenge parameters...</p>
+                </div>
+
+                <!-- IO Specifications Descriptions -->
+                <div class="section-title">Input</div>
+                <div id="prob-input-desc">
+                  <p>Input specifications are loading dynamically.</p>
+                </div>
+
+                <div class="section-title">Output</div>
+                <div id="prob-output-desc">
+                  <p>Output expectations are loading dynamically.</p>
+                </div>
+
+                <div class="sample-tests">
+                  <div class="section-title">Examples</div>
+                  <table class="sample-box">
+                    <!-- INPUT SECTION -->
+                    <thead>
+                      <tr>
+                        <th class="toggle-header">input</th>
+                      </tr>
+                    </thead>
+                    <tbody id="prob-input-rows">
+                      <!-- Input lines will go here dynamically -->
+                    </tbody>
+
+                    <!-- OUTPUT SECTION -->
+                    <thead>
+                      <tr>
+                        <th class="toggle-header">output</th>
+                      </tr>
+                    </thead>
+                    <tbody id="prob-output-rows">
+                      <!-- Output lines will go here dynamically -->
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- Optional Note Container Block -->
+                <div id="prob-note-container" hidden>
+                  <div class="section-title">Note</div>
+                  <div id="prob-note-text"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Layout Panel Wrapper -->
+        <div class="sidebar">
+          <!-- Running Contest Meta Status Box -->
+          <div class="contest-widget">
+            <!-- Widget Header (Contest Title) -->
+            <div class="widget-row header-row">
+              <a href="#" class="contest-title-link"
+                >Codeforces Round 1105 (Div. 1)</a
+              >
+            </div>
+
+            <!-- Finished Status Row -->
+            <div class="running-display">Contest is running</div>
+            <!-- Footer Row (Star Indicator) -->
+            <div class="timer-display" id="countdown-clock">02:05:00</div>
+          </div>
+
+          <!-- Mashup Clone Core Widget Elements -->
+          <div class="box">
+            <div class="caption">
+              <div class="titled">→ Clone Contest to Mashup</div>
+            </div>
+            <div class="box-content">
+              <p class="widget-desc">
+                You can clone this contest round structure directly to a
+                personal mashup layout.
+              </p>
+              <button type="button" class="widget-btn">Clone Contest</button>
+            </div>
+          </div>
+
+          <!-- Submit Widget Box -->
+          <div class="box">
+            <div class="caption">
+              <div class="titled">→ <a href="#">Submit?</a></div>
+            </div>
+
+            <div class="box-content-submit">
+              <div class="submit-widget">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                  <!-- Language Selection Row -->
+                  <div class="input-row">
+                    <label for="language">Language:</label>
+                    <select id="language" name="language">
+                      <option value="gnu-cpp23">
+                        GNU G++23 14.2 (64 bit, msys2)
+                      </option>
+                      <!-- Additional language options can go here -->
+                    </select>
+                  </div>
+
+                  <!-- File Upload Row -->
+                  <div class="input-row-file-upload-row">
+                    <label for="source-file">Choose file:</label>
+                    <input type="file" id="source-file" name="source-file" />
+                  </div>
+
+                  <!-- Form Submit Button Row -->
+                  <div class="button-row">
+                    <button type="submit" class="btn-submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- External JavaScript Universal Variables Source Object File Reference -->
+    <script src="problems.js"></script>
+
+    <!-- Client-Side Routing Address Processing Logic Engine -->
+    <script>
+      // Set the total duration of the contest in seconds when they open the page
+      // 2 hours, 5 minutes = (2 * 3600) + (5 * 60) = 7500 seconds
+      let totalSeconds = 7500;
+
+      const clockElement = document.getElementById("countdown-clock");
+
+      const countdownInterval = setInterval(() => {
+        if (totalSeconds <= 0) {
+          clearInterval(countdownInterval);
+          clockElement.textContent = "00:00:00";
+          document.querySelector(".timer-display").textContent =
+            "Contest Finished";
+          return;
+        }
+
+        // Decrement the timer
+        totalSeconds--;
+
+        // Math calculation for Hours, Minutes, and Seconds
+        let hours = Math.floor(totalSeconds / 3600);
+        let minutes = Math.floor((totalSeconds % 3600) / 60);
+        let seconds = totalSeconds % 60;
+
+        // Pad single digits with a leading zero (e.g., 5 becomes "05")
+        hours = String(hours).padStart(2, "0");
+        minutes = String(minutes).padStart(2, "0");
+        seconds = String(seconds).padStart(2, "0");
+
+        // Display the live update on the screen
+        clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+      }, 1000); // Code runs every 1000ms (1 second)
+    </script>
+
+    <!-- 1. Configuration object MUST come first -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [
+            ["\\(", "\\)"],
+            ["$", "$"],
+          ],
+        },
+        startup: {
+          pageReady: () => {
+            // This ensures MathJax finishes initializing ITS own elements
+            // before we kick off our custom page renderer
+            return MathJax.startup.defaultPageReady().then(() => {
+              renderProblemData();
+            });
+          },
+        },
+      };
+    </script>
+
+    <!-- 2. Core Library script (NO defer, NO async so it links reliably) -->
+    <script
+      id="MathJax-script"
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+
+    <!-- 3. Your dynamic layout execution engine -->
+    <script>
+      function renderProblemData() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const problemLetter = urlParams.get("id") || "A";
+        const activeProblem = problems[problemLetter];
+
+        if (activeProblem) {
+          document.getElementById("prob-title").innerText =
+            activeProblem.title || problemLetter + ". Problem Challenge";
+
+          if (activeProblem.time)
+            document.getElementById("prob-time-limit").innerText =
+              activeProblem.time;
+
+          if (activeProblem.memory)
+            document.getElementById("prob-memory-limit").innerText =
+              activeProblem.memory;
+
+          document.getElementById("prob-statement").innerHTML =
+            activeProblem.statement || "";
+          document.getElementById("prob-input-desc").innerHTML =
+            activeProblem.input || "<p>Standard test constraints apply.</p>";
+          document.getElementById("prob-output-desc").innerHTML =
+            activeProblem.output || "<p>Print the required output.</p>";
+
+          // Table Line Builder Logic
+          if (activeProblem.samples && activeProblem.samples.length > 0) {
+            const sample = activeProblem.samples[0];
+
+            if (sample.input) {
+              const inputLines = sample.input.trim().split("\n");
+              document.getElementById("prob-input-rows").innerHTML = inputLines
+                .map((line) => `<tr><td>${line}</td></tr>`)
+                .join("");
+            }
+
+            if (sample.output) {
+              const outputLines = sample.output.trim().split("\n");
+              document.getElementById("prob-output-rows").innerHTML =
+                outputLines.map((line) => `<tr><td>${line}</td></tr>`).join("");
+            }
+          }
+
+          if (activeProblem.note) {
+            document.getElementById("prob-note-text").innerHTML =
+              activeProblem.note;
+            document
+              .getElementById("prob-note-container")
+              .removeAttribute("hidden");
+          }
+
+          // Typeset the container safely now that text is injected
+          const container = document.querySelector(".ttypography");
+          if (container) {
+            MathJax.typesetClear([container]);
+            MathJax.typesetPromise([container]).catch((err) =>
+              console.log(err),
+            );
+          }
+        } else {
+          document.getElementById("prob-statement").innerHTML =
+            "<p class='error-message'>Error: Requested challenge parameter could not be compiled or found.</p>";
+        }
+      }
+    </script>
+  </body>
+</html>
